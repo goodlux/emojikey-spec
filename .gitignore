@@ -1,0 +1,59 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows system files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*.swo
+*~
+.atom/
+
+# Build output and temporary files
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.hugo_build.lock
+
+# Node.js (if using tools that require Node)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm/
+
+# Python (if using Python tools)
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache
+
+# OS generated files
+.directory
+.Trash-*
+$RECYCLE.BIN/
