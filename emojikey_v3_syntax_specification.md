@@ -189,34 +189,41 @@ For combining multiple readings of the same dimension, proper vector mathematics
 ### 9.1 Mathematical Process
 
 1. **Convert to Vector Components**:
+   
    - x = magnitude × cos(angle)
    - y = magnitude × sin(angle)
 
 2. **Average the Components**:
+   
    - x_avg = (x₁ + x₂ + ... + xₙ) / n
    - y_avg = (y₁ + y₂ + ... + yₙ) / n
 
 3. **Convert Back to Magnitude/Angle**:
+   
    - magnitude = √(x_avg² + y_avg²)
    - angle = atan2(y_avg, x_avg)
 
 ### 9.2 Example
 
 For two readings of Cognitive Mode:
+
 ```
 🧠🎨3∠45  (smaller magnitude leaning analytical)
 🧠🎨7∠120 (larger magnitude leaning creative)
 ```
 
 Converting to vectors:
+
 - Reading 1: x = 3 × cos(45°) ≈ 2.12, y = 3 × sin(45°) ≈ 2.12
 - Reading 2: x = 7 × cos(120°) ≈ -3.5, y = 7 × sin(120°) ≈ 6.06
 
 Averaging components:
+
 - x_avg = (2.12 + (-3.5))/2 ≈ -0.69
 - y_avg = (2.12 + 6.06)/2 ≈ 4.09
 
 Converting back:
+
 - magnitude = √((-0.69)² + 4.09²) ≈ 4.15
 - angle = atan2(4.09, -0.69) ≈ 100°
 
@@ -225,6 +232,7 @@ Resulting in a "smooshed" representation: 🧠🎨4∠100
 ### 9.3 Time-Weighted Averaging
 
 For more sophisticated summaries, weights can be applied:
+
 - Recency weighting (newer updates get higher weights)
 - Significance weighting (important interactions have more impact)
 - Session boundary recognition (separate conversation sessions)
@@ -274,6 +282,7 @@ indicators:{⁰⁻⁹⁹:confidence,↔️↗️↘️→←:trend}
 ### 10.2 Multi-timeframe Approach
 
 Providing summaries at different time scales (all history, 30 days, 7 days) enables the AI to understand:
+
 - Overall relationship patterns
 - Recent evolution trends
 - Current interaction context
